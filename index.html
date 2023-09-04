@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Public+Sans:400,500,700&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <style>
+        /* Reset default margin and padding for the entire page */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+			background-color: black;
+        }
+
+        /* Create four horizontal areas with different background colors */
+        .section {
+            height: 25%; /* Each section takes up 25% of the viewport height */
+            width: 100%;
+            display: flex;
+            align-items: center;
+			align: center;
+            justify-content: center;
+			margin-bottom: 20px; 
+        }
+
+        /* Define background colors for each section */
+        .section:nth-child(1) {
+            background-color: black; /* Change to your desired color */
+        }
+
+        .section:nth-child(2) {
+            background-color: black; /* Change to your desired color */
+			color: white;
+			max-width: 100%; /* Ensure the video doesn't exceed the viewport width */
+			height: auto;
+        }
+
+        .section:nth-child(3) {
+            background-color: black; /* Change to your desired color */
+			max-width: 100%; /* Ensure the video doesn't exceed the viewport width */
+			height: auto;
+        }
+
+        .section:nth-child(4) {
+            background-color: black; /* Change to your desired color */
+			max-width: 100%; /* Ensure the rectangle doesn't exceed the viewport width */
+            height: auto; /* Maintain the rectangle's aspect ratio */
+        }
+		
+		.section:nth-child(1) img {
+            max-width: 100%; /* Make the image scale to the width of its container */
+			max-height: 100%;
+            height: auto; /* Maintain the image's aspect ratio */
+        }
+		
+		.section:nth-child(1) p {
+            margin-top: 10px; /* Add some top margin to separate image and text */
+        }
+		
+		.section:nth-child(5) {
+            background-color: black; /* Change to your desired color */
+			max-width: 100%; /* Ensure the video doesn't exceed the viewport width */
+			height: auto;
+        }
+
+		.texto {
+            width: 300px; /* Set the desired width of the rectangle */
+            height: 150px; /* Set the desired height of the rectangle */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto; /* Center the rectangle horizontally */
+			margin-bottom: 50px; 
+        }
+
+        /* Style the text inside the rectangle */
+        .texto p {
+            color: white; /* Text color */
+			font-size: 28px;
+			font-weight: 600;
+			line-height: 1.2em;
+			text-align: center;
+			font-family: 'Poppins', sans-serif;
+        }
+
+
+	
+		.rectangle {
+            width: 300px; /* Set the desired width of the rectangle */
+            height: 150px; /* Set the desired height of the rectangle */
+            border: 2px solid white; /* Add white borders */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto; /* Center the rectangle horizontally */
+        }
+
+        /* Style the text inside the rectangle */
+        .rectangle p {
+            color: white; /* Text color */
+            font-size: 16px; /* Text font size */
+            text-align: center; /* Center-align the text */
+			font-family: 'Poppins', sans-serif;
+        }
+		
+		.whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #25d366; /* Green background color */
+            color: white; /* Text color */
+            padding: 20px 30px; /* Adjust padding as needed */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+			margin-bottom: 100px; 
+        }
+
+        /* Style the WhatsApp icon */
+        .whatsapp-button i {
+            font-size: 20px;
+            margin-right: 10px; /* Add spacing between the icon and text */
+        }
+    </style>
+    <title>Four Horizontal Areas</title>
+</head>
+<body>
+    <!-- Create four horizontal areas -->
+    <div class="section">
+	<img src="digital.png"/>
+	</div>
+    <div class="section">
+	<div class="texto">
+        <p>Aprenda Como criar um negocio pela internet, de forma sustentável e escalável, começando do zero e sem experiência?</p>
+    </div>
+	
+	</div>
+    <div class="section">
+		<video width="70%" controls autoplay muted>
+			<source src="evento.mp4" type="video/mp4">
+		</video>
+	
+	</div>
+    <div class="section">
+	<div class="rectangle">
+        <p><i aria-hidden="true" class="far fa-calendar-check"></i> 06 DE SETEMBRO</p>
+		<p><i aria-hidden="true" class="fas fa-exclamation-circle"></i> AULA 100% GRATUITA</p>
+    </div>
+	</div>
+	<div class="section">
+	<a href="https://wa.me/your-phonenumber" target="_blank" class="whatsapp-button">
+        <i aria-hidden="true" class="fab fa-whatsapp"> </i> ME CHAME NO WHATSAPP </a>
+	</div>
+</body>
+</html>
