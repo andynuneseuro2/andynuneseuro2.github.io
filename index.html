@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script>
-	  var video = document.getElementById("video_evento");
-	  var playButton = document.getElementById("playButton");
-	  playButton.addEventListener("click", function() {
-	    if (video.paused) {
-	      video.play();
-	      playButton.innerHTML = '<i class="fas fa-pause"></i>';
-	    } else {
-	      video.pause();
-	      playButton.innerHTML = '<i class="fas fa-play"></i>';
-	    }
-	  });
-	</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Public+Sans:400,500,700&display=swap">
@@ -177,6 +164,18 @@
 		<p><i aria-hidden="true" class="fas fa-exclamation-circle"></i> AULA 100% GRATUITA</p>
     	</div>
     </div>
-
+<script>
+	  var video = document.getElementById("video_evento");
+	  var playButton = document.getElementById("playButton");
+	  playButton.addEventListener("click", function() {
+	    if (video.paused) {
+	      video.play();
+	      playButton.innerHTML = '<i class="fas fa-pause"></i>';
+	    } else {
+	      video.pause();
+	      playButton.innerHTML = '<i class="fas fa-play"></i>';
+	    }
+	  });
+	</script>
 </body>
 </html>
