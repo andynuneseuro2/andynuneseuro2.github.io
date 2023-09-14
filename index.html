@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script>
+	  var video = document.getElementById("video_evento");
+	  var playButton = document.getElementById("playButton");
+	  playButton.addEventListener("click", function() {
+	    if (video.paused) {
+	      video.play();
+	      playButton.innerHTML = '<i class="fas fa-pause"></i>';
+	    } else {
+	      video.pause();
+	      playButton.innerHTML = '<i class="fas fa-play"></i>';
+	    }
+	  });
+	</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Public+Sans:400,500,700&display=swap">
@@ -146,14 +159,17 @@
 	
 	</div>
     <div class="section">
-		<video width="70%" controls autoplay>
+		<video id="video_evento" width="70%" controls autoplay>
 			<source src="evento.mp4" type="video/mp4">
 		</video>
-	
 	</div>
-		<div class="section">
-	<a href="https://chat.whatsapp.com/K8FWk4ZEYDw8YzW1wB5jwt" target="_blank" class="whatsapp-button">
-        <i aria-hidden="true" class="fab fa-whatsapp"> </i> ME CHAME NO WHATSAPP </a>
+	<div class="section">
+		<button id="playButton"><i class="fas fa-play"></i></button>
+	</div>
+	
+	<div class="section">
+	  <a href="https://chat.whatsapp.com/K8FWk4ZEYDw8YzW1wB5jwt" target="_blank" class="whatsapp-button">
+          <i aria-hidden="true" class="fab fa-whatsapp"> </i> ME CHAME NO WHATSAPP </a>
 	</div>
     <div class="section">
 	<div class="rectangle">
