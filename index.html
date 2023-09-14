@@ -151,7 +151,7 @@
 		</video>
 	</div>
 	<div class="section">
-		<button id="playButton"><i class="fas fa-play"></i></button>
+		<button id="playButton"><i class="fas fa-play">Ver video</i></button>
 	</div>
 	
 	<div class="section">
@@ -170,10 +170,10 @@
 	  playButton.addEventListener("click", function() {
 	    if (video.paused) {
 	      video.play();
-	      playButton.innerHTML = '<i class="fas fa-pause"></i>';
+	      playButton.innerHTML = '<i class="fas fa-pause">Parar video</i>';
 	    } else {
 	      video.pause();
-	      playButton.innerHTML = '<i class="fas fa-play"></i>';
+	      playButton.innerHTML = '<i class="fas fa-play">Ver video</i>';
 	    }
 	  });
 	</script>
