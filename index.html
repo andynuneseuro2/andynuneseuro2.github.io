@@ -146,12 +146,12 @@
 	
 	</div>
     <div class="section">
-		<video id="video_evento" width="70%" controls autoplay>
+		<video id="video_evento" width="70%" controls autoplay muted>
 			<source src="evento.mp4" type="video/mp4">
 		</video>
 	</div>
 	<div class="section">
-		<button id="playButton"><i class="fas fa-play">Ver video</i></button>
+		<button id=" muteButton"><i class="fas fa-volume-up">Ligar Som</i></button>
 	</div>
 	
 	<div class="section">
@@ -164,18 +164,14 @@
 		<p><i aria-hidden="true" class="fas fa-exclamation-circle"></i> AULA 100% GRATUITA</p>
     	</div>
     </div>
-<script>
-	  var video = document.getElementById("video_evento");
-	  var playButton = document.getElementById("playButton");
-	  playButton.addEventListener("click", function() {
-	    if (video.paused) {
-	      video.play();
-	      playButton.innerHTML = '<i class="fas fa-pause">Parar video</i>';
-	    } else {
-	      video.pause();
-	      playButton.innerHTML = '<i class="fas fa-play">Ver video</i>';
-	    }
-	  });
-	</script>
+    muteButton.addEventListener("click", function() {
+      if (video.muted) {
+        video.muted = false;
+        muteButton.innerHTML = '<i class="fas fa-volume-up">Ligar Som</i>';
+      } else {
+        video.muted = true;
+        muteButton.innerHTML = '<i class="fas fa-volume-off">Desligar Som</i>';
+      }
+    });
 </body>
 </html>
