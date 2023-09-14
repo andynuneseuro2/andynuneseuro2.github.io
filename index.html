@@ -163,7 +163,10 @@
         <p><i aria-hidden="true" class="far fa-calendar-check"></i> 26 DE SETEMBRO</p>
 		<p><i aria-hidden="true" class="fas fa-exclamation-circle"></i> AULA 100% GRATUITA</p>
     	</div>
-    </div>
+    </div> 
+    <script>
+    var video = document.getElementById("video_evento");
+    var muteButton = document.getElementById("muteButton");
     muteButton.addEventListener("click", function() {
       if (video.muted) {
         video.muted = false;
@@ -172,6 +175,7 @@
         video.muted = true;
         muteButton.innerHTML = '<i class="fas fa-volume-off">Desligar Som</i>';
       }
-    });
+    }); 
+    </script>
 </body>
 </html>
